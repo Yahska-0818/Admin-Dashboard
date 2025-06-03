@@ -24,80 +24,85 @@ img {
 }
 
 body {
-    margin: 0;
-    box-sizing: border-box;
-    min-width: 100vh;
-    min-height: 100vh;
-    color: black;
-    font-family: "Raleway", sans-serif;
-    font-style: normal;
+  margin: 0;
+  box-sizing: border-box;
+  min-width: 100vh;
+  min-height: 100vh;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 5fr;
+  display: grid;
+  grid-template-columns: 352px 1690px;
+  grid-template-rows: 212px 810px;
 }
 
 .header {
-    background-color: #fefeff;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    padding: 20px;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    padding-left: 50px;
+  background-color: #fefeff;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding-left: 50px;
 }
 
 .sidebar {
-    background-color: #1992d4;
-    grid-column: 1/2;
-    grid-row: 1/3;
-    padding: 20px;
-    display: grid;
-    grid-template-rows: 50px 300px 150px;
-    gap: 50px;
+  background-color: #1992d4;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: 50px 300px 150px;
+  gap: 50px;
 }
 
 .content {
-    background-color: #e3e8f1;
-    grid-column: 2/3;
-    grid-row: 2/3;
+  background-color: #e3e8f1;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 20px;
+  padding-top: 35px;
 }
 
 .search-bar {
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    padding: 5px;
-    gap: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  padding: 5px;
+  gap: 20px;
 }
 
 .search-icon {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 .search-text {
-    background-color: #e3e8f1;
-    height: 24px;
-    width: 800px;
-    border-radius: 20px;
-    border: 0;
+  background-color: #e3e8f1;
+  height: 24px;
+  width: 800px;
+  border-radius: 20px;
+  border: 0;
 }
 
 .top-content {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    grid-auto-flow: column;
-    align-items: center;
-    align-self: self-start;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-auto-flow: column;
+  align-items: center;
+  align-self: self-start;
 }
 
 .bell {
-    width: 24px;
-    height: 24px;
-    justify-self: center;
+  width: 24px;
+  height: 24px;
+  justify-self: center;
 }
 
 .pfp {
@@ -143,7 +148,7 @@ body {
   color: white;
   border: none;
   height: 40px;
-  width: 85px;
+  width: 105px;
   border-radius: 20px;
   font-size: 16px;
   font-weight: 700;
@@ -194,4 +199,75 @@ body {
 .last-options {
   display: grid;
   align-items: start;
+}
+
+.projects {
+  grid-column: 1/2;
+  grid-row: 1/3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.heading {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.filler {
+  font-size: 14px;
+}
+
+.anno {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.trend {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.text-cards {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.logos-cards {
+  align-self: self-end;
+  justify-self: self-end;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  gap: 25px;
+}
+
+.project-cards {
+  height: 160px;
+  width: 550px;
+  background-color: #fefeff;
+  border-radius: 10px;
+  padding: 20px 10px;
+  border-left-style: solid;
+  border-left-color: #efb52f;
+  border-left-width: 10px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 2fr 1fr;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(2,550px);
+  gap: 40px;
+}
+
+.small-logo {
+  height: 25px;
+  width: 25px;
 }
